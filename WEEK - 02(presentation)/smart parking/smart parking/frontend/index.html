@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Car Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚗 Smart Car Parking System</h1>
+    <p>Book Your Parking Slot Before You Arrive</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#booking">Book Slot</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+    <h2>Find & Reserve Parking Instantly</h2>
+    <p>A smart solution for malls and crowded areas.</p>
+
+    <button onclick="document.getElementById('booking').scrollIntoView();">
+        Book Now
+    </button>
+</section>
+
+<section id="features">
+
+    <h2>✨ Features</h2>
+
+    <div class="card">
+        <h3>🔍 Search Parking</h3>
+        <p>Find available parking spaces nearby.</p>
+    </div>
+
+    <div class="card">
+        <h3>📅 Pre Booking</h3>
+        <p>Reserve your parking slot in advance.</p>
+    </div>
+
+    <div class="card">
+        <h3>⏰ Save Time</h3>
+        <p>Avoid searching for parking in crowded areas.</p>
+    </div>
+
+    <div class="card">
+        <h3>📱 Digital Confirmation</h3>
+        <p>Receive booking confirmation instantly.</p>
+    </div>
+
+</section>
+
+<section id="booking">
+
+    <h2>🚘 Book Your Slot</h2>
+
+    <form id="bookingForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter Name"
+            required>
+
+        <input
+            type="text"
+            id="vehicle"
+            placeholder="Vehicle Number"
+            required>
+
+        <select id="slot">
+
+            <option value="A1">Slot A1</option>
+            <option value="A2">Slot A2</option>
+            <option value="A3">Slot A3</option>
+            <option value="B1">Slot B1</option>
+            <option value="B2">Slot B2</option>
+
+        </select>
+
+        <button type="submit">
+            Confirm Booking
+        </button>
+
+    </form>
+
+    <p id="result"></p>
+
+</section>
+
+<section id="contact">
+
+    <h2>📞 Contact Us</h2>
+
+    <p>Email : smartparking@gmail.com</p>
+
+    <p>Phone : +91 9876543210</p>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Smart Car Parking System | College Project</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
